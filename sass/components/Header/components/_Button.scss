@@ -1,0 +1,22 @@
+.Navigation-button {
+    button {
+        font-size: var(--header-font-size);
+        font-weight: var(--header-font-weight);
+        text-transform: var(--header-text-transform);
+        border: none; 
+        outline: none;
+        background-color: transparent;
+        background-image: url(/assets/icons/button.svg);
+        width: 156px;
+        height: 40px;
+        transition: all 0.3s ease-in-out;
+        cursor: pointer;
+        &:hover {
+            transform: scale(1.05);
+        }
+        a{
+            text-decoration: none;
+            color: var(--bg-color);
+        }
+    }
+}
