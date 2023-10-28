@@ -1,0 +1,39 @@
+
+.Top_Rated{
+    display: flex;
+    flex-direction: row;
+    margin-top: 57px;
+    justify-content: center;
+    li{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        margin-right: 35px;
+        cursor: pointer;
+        &:last-child {
+            margin-right: 0;
+        }
+        img {
+            display: none;
+            width: 18px;
+            height: 12px;
+        }
+        a {
+            color: var(--brown-color);
+            font-size: 24px;
+            font-style: normal;
+            font-weight: var(--main-font-weight);
+            line-height: 98.5%;
+        }
+        &:hover {
+            img {
+                display: flex;
+            }
+            a {
+                color: var(--black-color);
+            }
+        }
+    }
+}
