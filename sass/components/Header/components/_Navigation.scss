@@ -1,6 +1,6 @@
 .Navigation {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-content: center;
     align-items: center;
 }
@@ -43,9 +43,6 @@
 }
 
 @media screen and (max-width: 1050px) {
-    .Navigation {
-        justify-content: space-around;
-    }
     .Navigation-Items {
         display: none;
     }

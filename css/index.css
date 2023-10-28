@@ -50,9 +50,8 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -ms-flex-line-pack: center;
       align-content: center;
   -webkit-box-align: center;
@@ -101,10 +100,6 @@ a {
 }
 
 @media screen and (max-width: 1050px) {
-  .Navigation {
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-  }
   .Navigation-Items {
     display: none;
   }
@@ -353,15 +348,12 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: url(/assets/images/bg_top.png);
+  background: url(../../../assets/images/bg_top.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
   font-family: var(--font-family-forum);
   overflow: hidden;
-}
-.Header nav {
-  width: 100%;
 }
 
 .Main-title1 {
@@ -420,7 +412,9 @@ a {
   margin-right: 0;
 }
 .Top_Rated li img {
-  display: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   width: 18px;
   height: 12px;
 }
@@ -1906,11 +1900,16 @@ a {
 }
 @media screen and (min-width: 700px) and (max-width: 1400px) {
   .Subscribe_List_Button {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
   }
   .Subscribe_List_Button button {
+    margin-top: 15px;
     position: relative;
     width: 200px;
   }
@@ -2220,6 +2219,10 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  background: url(../../assets/images/1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: 80px;
 }
 .Footer_Navigation .Footer_Navigation-Logo {
   display: -webkit-box;
@@ -2262,7 +2265,7 @@ a {
   border: none;
   outline: none;
   background-color: transparent;
-  background-image: url(/assets/icons/button.svg);
+  background-image: url(./assets/icons/button.svg);
   width: 156px;
   height: 40px;
 }

@@ -138,10 +138,10 @@
 
 @media screen and (min-width:700px) and (max-width: 1400px) {
     .Subscribe_List_Button {
-        // flex-direction: column;
+        flex-direction: column !important;
         justify-content: center;
         button {
-            // margin-top: 15px;
+            margin-top: 15px;
             position: relative;
             width: 200px;
         }
