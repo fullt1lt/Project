@@ -348,7 +348,7 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: url(../../../assets/images/bg_top.png);
+  background: url(../assets/images/bg_top.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -1491,7 +1491,7 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background: url(/assets/images/bg_mont.png);
+  background: url(./assets/images/bg_mont.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -1765,7 +1765,7 @@ a {
   width: 60%;
   height: 565px;
   border-radius: 12px;
-  background: url(/assets/images/Subscribe_List.png);
+  background: url(./assets/images/Subscribe_List.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -2219,7 +2219,7 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: url(../../assets/images/1.png);
+  background: url(../assets/images/1.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position-y: 80px;
