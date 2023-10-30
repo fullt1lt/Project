@@ -1,19 +1,17 @@
 .Top_Rated_Gallery {
-    display: flex;
-    flex-direction: row;
     justify-content: center;
     margin-top: 25px;
-    // max-width: 1100px;
-    // overflow-x: scroll;
+    display: grid;
+    grid-template-columns: repeat(3, 350px);
+    grid-template-rows: repeat(2, 570px);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    padding: 20px;
     .Top_Rated_Gallery_Item{
         display: flex;
         position: relative;
-        width: 350px;
-        height: 570px;
         overflow: hidden;
-        margin-right: 20px;
         border-radius: 12px;
-        box-sizing: border-box;
         transition: all 0.3s ease-in-out;
         cursor: pointer;
         &:hover {
@@ -130,5 +128,22 @@
                 }
             }
         }
+    }
+}
+
+@media screen and (max-width: 1085px) {
+    .Top_Rated_Gallery {
+        grid-template-columns: repeat(6, 350px);
+        grid-template-rows: repeat(1, 570px);
+        justify-content: start;
+        overflow-x: scroll;
+        overflow-y: hidden;
+    }
+    .Top_Rated_Gallery::-webkit-scrollbar {
+        background-color: transparent;
+    }
+    .Top_Rated_Gallery::-webkit-scrollbar-thumb {
+        background-color: #346083;
+        border-radius: 5px;
     }
 }

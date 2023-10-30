@@ -1,14 +1,13 @@
 .Navigation-button {
     button {
-        font-size: var(--header-font-size);
         font-weight: var(--header-font-weight);
         text-transform: var(--header-text-transform);
         border: none; 
         outline: none;
         background-color: transparent;
-        background-image: url(/assets/icons/button.svg);
-        width: 156px;
-        height: 40px;
+        border-radius: 61px;
+        border: 1px solid #FFF;
+        padding: 10px 15px;
         transition: all 0.3s ease-in-out;
         cursor: pointer;
         &:hover {
@@ -17,6 +16,18 @@
         a{
             text-decoration: none;
             color: var(--bg-color);
+            text-wrap: nowrap;
+            font-size: 14px;
+        }
+    }
+}
+
+@media screen and (max-width: 1085px) {
+    .Navigation-button {
+        a {
+            span {
+                display: none;
+            }
         }
     }
 }

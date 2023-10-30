@@ -3,6 +3,7 @@
     justify-content: space-around;
     align-content: center;
     align-items: center;
+    padding-top: 20px;
 }
 
 .Navigation-Items_Mobill {
@@ -32,6 +33,7 @@
             }
             a {
                 color: var(--bg-color);
+                font-size: 1vw;
             }
         &:hover {
             a {
@@ -42,7 +44,7 @@
     }
 }
 
-@media screen and (max-width: 1050px) {
+@media screen and (max-width: 1085px) {
     .Navigation-Items {
         display: none;
     }

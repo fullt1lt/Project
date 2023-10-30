@@ -9,7 +9,7 @@
         flex-direction: column;
         margin-top: 100px;
         span{
-            font-size: 25px;
+            font-size: 2.6vw;
             text-align: center;
             color: var(--black-color);
             line-height: 98.5%;
@@ -18,13 +18,15 @@
         }
     }
     .Header_information_Title2 {
-        margin-top: 100px;
+        // margin-top: 100px;
+        margin: 100px 30px 0;
         ul{
             li{
                 display: flex;
                 flex-direction: column;
+                box-sizing: border-box;
                 span{
-                    font-size: 12.375em;
+                    font-size: 18vw;
                     text-align: center;
                     font-style: normal;
                     color: var(--white-color);
@@ -46,7 +48,7 @@
         .Сhoice_Of_Location_title {
             display: flex;
             justify-content: center;
-            width: 330px;
+            width: 30%;
             height: 55px;
             padding: 13px 46px;
             border-radius: 67px;
@@ -56,7 +58,7 @@
             text-transform: var(--header-text-transform);
             align-items: center;
             text-align: center;
-            font-size: 25.757px;
+            font-size: 2.68vh;
             font-style: normal;
             line-height: normal;
             letter-spacing: 1.03px;
@@ -79,7 +81,7 @@
                 .Location_Header_Item {
                     li{
                         font-family: Forum;
-                        font-size: 18px;
+                        font-size: 1.8vh;
                         font-style: normal;
                         line-height: normal;
                         &:first-child{
@@ -133,7 +135,7 @@
                     border-radius: 121px;
                     background-color: var(--black-color);
                     font-family: Forum;
-                    font-size: 24px;
+                    font-size: 1.8vh;
                     font-style: normal;
                     line-height: normal;
                     letter-spacing: 0.96px;
@@ -152,10 +154,25 @@
     }
 }
 
-@media screen and (max-width: 1200px) {
-    .Header_information_Title2 {
-        flex-direction: column;
-        color: red;
-
+@media screen and (max-width: 1085px) {
+    .Сhoice_Of_Location_Header{
+        flex-direction: column !important;
+        align-items: start !important;
+        width: 90% !important;
+        li {
+            margin-top: 15px;
+            margin-right: 0px !important;
+        }
+        .Button_Find {
+            width: 100%;
+            button {
+                width: 100% !important;
+            }
+        }
+    }
+    .Сhoice_Of_Location_title {
+        padding: 0 !important;
+        width: 250px !important;
+        height: 60px !important;
     }
 }

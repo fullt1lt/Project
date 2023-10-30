@@ -1,8 +1,7 @@
 .Book_With_Us__list {
     display: flex;
     flex-direction: column;
-    // margin-top: 300px;
-    margin: 300px auto 0px;
+    margin: 200px auto 0px;
     max-width: 1100px;
     .Book_With_Us_Title {
         margin: 0 auto;
@@ -132,5 +131,11 @@
     }
     100% {
         transform: translate(1px, -2px) rotate(-1deg);
+    }
+}
+
+@media screen and (max-width: 1085px) {
+    .Book_With_Us__list {
+    margin: 100px auto 0px !important; 
     }
 }

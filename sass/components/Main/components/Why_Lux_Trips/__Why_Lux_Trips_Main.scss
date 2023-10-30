@@ -4,7 +4,6 @@
     .Why_Lux_Trips_Title_List{
         display: flex;
         flex-direction: row;
-        // background-image: url(/assets/images/sky.png);
         width: 100%;
         padding-top: 115px;
         justify-content: center;
@@ -169,6 +168,8 @@
                 font-size: 2.5em;
                 line-height: 101.2%;
                 text-wrap: wrap;
+                -webkit-transition: all 0.5s ease;
+                transition: all 0.5s ease;
             }
         }
         .Why_Lux_Trips_Main_Footer_Text2{
@@ -244,6 +245,75 @@
                     margin: 10px 30px;
                 }
             }
+        }
+    }
+}
+
+@media screen and (max-width: 1085px) {
+    .Why_Lux_Trips_Title_List {
+        flex-direction: column !important;
+        align-items: center;
+         li:nth-child(1){
+            margin-right: 0 !important;
+            p {
+                text-align: center;
+            }
+         }
+         li:nth-child(2) {
+            max-width: 100%;
+            p {
+                padding: 10px;
+            }
+         }
+    }
+
+
+    .Why_Lux_Trips_Images_list {
+        .Why_Lux_Trips_Images_Imag1 {
+            top: 0 !important;
+        }
+        .Why_Lux_Trips_Images_Imag3 {
+            top: 0 !important;
+        }
+        .Why_Lux_Trips_Images_Imag4 {
+            display: none;
+        }
+
+    }
+
+    .Why_Lux_Trips_Main_Text_List {
+        grid-template-columns: minmax(150px, 256px) minmax(150px, 355px) !important;
+        // grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, auto) !important;
+        .Why_Lux_Trips_Main_Footer_Text1 {
+            grid-area: 1 / 1 / 2 / 3 !important;
+        }
+        .Why_Lux_Trips_Main_Footer_Imag {
+            grid-area: 2 / 1 / 4 / 2 !important;
+            align-items: flex-start;
+            .Main_Footer_Imag_Vector_1 {
+                img {
+                    display: none;
+                }
+            }
+            .Main_Footer_Imag_Vector_2 {
+                img {
+                    display: none;
+                }
+            }
+        }
+        .Why_Lux_Trips_Main_Footer_Text2 {
+            grid-area: 2 / 2 / 3 / 3 !important;
+            padding-right: 0px !important;
+        }
+        .Why_Lux_Trips_Main_Footer_Text3 {
+            grid-area: 3 / 2 / 4 / 3 !important;
+            padding-top: 0 !important;
+        }
+        .Why_Lux_Trips_Main_Footer_Button {
+            grid-area: 4 / 1 / 5 / 3 !important;
+            display: flex;
+            justify-content: center;
         }
     }
 }

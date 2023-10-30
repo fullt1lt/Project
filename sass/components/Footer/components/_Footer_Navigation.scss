@@ -7,13 +7,19 @@
     background: url(../assets/images/1.png);
     background-repeat : no-repeat;
     background-size: cover; 
-    background-position-y: 80px;
+    background-position-y: 100px;
     .Footer_Navigation-Logo {
         display: flex;
         align-content: center;
         justify-content: center;
+        img {
+            margin-left: 60px;
+        }
     }
     .Footer_Navigation-Items {
+        display: flex;
+        flex-direction: row;
+        margin-top: 45px;
         ul {
             display: flex;
             align-items: center;
@@ -21,36 +27,85 @@
                 font-size: var(--header-font-size);
                 font-weight: var(--header-font-weight);
                 text-transform: var(--header-text-transform);
-                margin-top: 85px;
-                margin-right: 40px;
-                &:hover {
-                    a {
-                        color: var(--white-color);
-                    }
-                }
                 &:last-child {
                     margin-right: 0px;
                 }
                 a {
                     color: var(--bg-color);
                 }
-                button {
-                            font-size: var(--header-font-size);
-                            font-weight: var(--header-font-weight);
-                            text-transform: var(--header-text-transform);
-                            border: none; 
-                            outline: none;
-                            background-color: transparent;
-                            background-image: url(./assets/icons/button.svg);
-                            width: 156px;
-                            height: 40px;
-                            a{
-                                text-decoration: none;
-                                color: var(--bg-color);
-                            }
+            }
+            .Footer_List_Button {
+                cursor: pointer;
+                transition: all 0.3s ease-in-out;
+                &:hover {
+                    transform: scale(1.05);
+                }
+                .Footer_List_Button_List {
+                   display: flex;
+                   flex-direction: column;
+                   align-items: center;
+                   .Footer_List_Button_List_Bg {
+                       display: flex;
+                       flex-direction: column;
+                       width: 250px;
+                       height: 61px;
+                       align-items: center;
+                       justify-content: center;
+                       img {
+                           position: relative;
+                           width: 48px;
+                           height: 20px;
+                           padding: 0 33px;
+                       }
+                       img:nth-child(1) {
+                           top: 0px;
+                           background-color: transparent;
+                       }
+                       img:nth-child(2) {
+                           bottom: -33px;
+                           background-color: transparent;
+                       }
+                       button {
+                           font-weight: var(--main-font-weight);
+                           text-transform: var(--main-text-transform);
+                           letter-spacing: 0.64px;
+                           padding: 10px 15px;
+                           border: none; 
+                           outline: none;
+                           background-color: transparent;
+                           border-radius: 61.317px;
+                           border: 0.624px solid var(--black-color);
+                           width: 280px;
+                           height: 55px;
+                           a{
+                               text-decoration: none;
+                               font-family: var(--font-family-forum);
+                               color: var(--black-color);
+                               margin: 10px 30px;
+                           }
+                       }
+                   }
                 }
             }
         }
+        .Footer_Navigation-Items_List1{
+                li {
+                    margin-right: 40px;
+                    text-wrap: nowrap;
+                }
+        }
+        .Footer_Navigation-Items_List3{
+            margin: 0 40px;
+            li {
+                margin-right: 0px;
+            }
+            }
+        .Footer_Navigation-Items_List2{
+                li {
+                    margin-right: 40px;
+                    text-wrap: nowrap;
+                }
+            }
     }
     .Footer_Navigation-End {
         padding: 50px 0px;
@@ -64,10 +119,62 @@
                 span {
                     color: var(--black-color);
                     font-family: var(--font-family-Manrope);
-                    font-size: 0.75em;
+                    font-size: 16px;
                     font-style: normal;
                     font-weight: var(--header-font-weight);
-                    line-height: 16px;
+                    line-height: normal;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1085px) {
+    .Footer_Navigation-Items {
+        display: flex;
+        flex-direction: column !important;
+        align-items: center !important;
+        .Footer_List_Button {
+            order: 1;
+        }
+        .Footer_Navigation-Items_List1{
+            order: 2 !important;
+            margin-top: 20px;
+            text-wrap: nowrap;
+            li {
+                width: 100%;
+            }
+            }
+        .Footer_Navigation-Items_List2{
+            order: 3 !important;
+            margin-top: 20px;
+            li {
+                text-wrap: nowrap;
+            }
+        }
+        .Footer_Navigation-Items_List3 {
+            margin: 0 !important;
+            }
+    }
+
+    .Footer_Navigation-Logo {
+        img {
+            margin-left: 0px !important;
+        }
+    }
+
+    .Footer_Navigation-End_List {
+            li {
+                display: flex;
+                flex-direction: column !important;
+            }
+    }
+
+    .Footer_List_Button_List_Bg {
+        button {
+            a {
+                span {
+                    display: none;
                 }
             }
         }
