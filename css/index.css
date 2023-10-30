@@ -1897,7 +1897,6 @@ a {
           animation: cloudR 12s linear infinite;
   width: 100%;
   overflow: hidden;
-  padding-left: 1100px;
   margin-top: 450px;
   z-index: 3;
 }
