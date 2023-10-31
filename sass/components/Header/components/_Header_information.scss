@@ -154,19 +154,6 @@
     }
 }
 
-.Gradient {
-    position: relative;
-    width: 100%;
-    height: 350px;
-    left: 0;
-    bottom: -50px;
-    img {
-        width: 100%;
-        height: 100%;
-    }
-}
-
-
 @media screen and (max-width: 1085px) {
     .Сhoice_Of_Location_Header{
         flex-direction: column !important;
