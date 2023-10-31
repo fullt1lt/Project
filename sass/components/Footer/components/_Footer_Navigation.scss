@@ -4,10 +4,10 @@
     justify-content: space-between;
     align-content: center;
     align-items: center;
-    background: url(../assets/images/1.png);
+    background: url(../assets/images/Footer.png);
     background-repeat : no-repeat;
     background-size: cover; 
-    background-position-y: 100px;
+    background-position-y: -50px;
     .Footer_Navigation-Logo {
         display: flex;
         align-content: center;
@@ -72,15 +72,15 @@
                            padding: 10px 15px;
                            border: none; 
                            outline: none;
-                           background-color: transparent;
+                           background-color: var(--black-color);
                            border-radius: 61.317px;
-                           border: 0.624px solid var(--black-color);
+                           border: 0.624px solid var(--white-color);
                            width: 280px;
                            height: 55px;
                            a{
                                text-decoration: none;
                                font-family: var(--font-family-forum);
-                               color: var(--black-color);
+                               color: var(--white-color);
                                margin: 10px 30px;
                            }
                        }
@@ -130,6 +130,9 @@
 }
 
 @media screen and (max-width: 1085px) {
+    .Footer_Navigation {
+    background-position-y: -20px !important;
+}
     .Footer_Navigation-Items {
         display: flex;
         flex-direction: column !important;
